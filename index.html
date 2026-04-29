@@ -1,32 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Ping coming soon page</title>
+  <title>Ping coming soon page | VIMP</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon.png">
+  <link rel="stylesheet" href="./styles/main.css">
+  <script src="./scripts/main.js" defer></script>
 </head>
+
 <body>
 
-  We are launching soon!
+  <header class="header">
+    <div class="header__inner container">
+      <img src="./assets/images/logo.svg" alt="Ping">
+    </div>
+  </header>
 
-  Subscribe and get notified
+  <main>
+    <section class="hero">
+      <div class="hero__inner container">
+        <div class="hero__content">
+          <div class="hero__text">
+            <h1 class="hero__title">We are launching <span class="text-accent">soon!</span></h1>
+            <p class="hero__description">Subscribe and get notified</p>
+          </div>
+          <form class="form" novalidate>
+            <div class="form__field">
+              <label for="user-email" class="visually-hidden">Email address</label>
+              <input type="email" name="email" id="user-email" class="form__input" placeholder="Your email address..."
+                aria-describedby="error-message" required>
+              <p id="error-message" class="form__message" aria-live="polite" hidden>Please provide a valid email
+                address</p>
+            </div>
+            <button type="submit" class="form__button" disabled>Notify Me</button>
+          </form>
+        </div>
 
-  Notify Me
+        <div class="hero__image">
+          <img src="./assets/images/illustration-dashboard.webp" alt="">
+        </div>
+      </div>
+    </section>
+  </main>
 
-  &copy; Copyright Ping. All rights reserved.
+  <footer>
+    <div class="footer__inner container">
+      <div class="footer__content">
+        <nav class="social" aria-label="Social media links">
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
+                aria-label="Follow us on Facebook (opens in a new tab)" class="social__link">
+                <svg class="social__icon" aria-hidden="true">
+                  <use href="./assets/images/social-icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="https://x.com" target="_blank" rel="noopener noreferrer"
+                aria-label="Follow us on X, formerly Twitter (opens in a new tab)" class="social__link">
+                <svg class="social__icon" aria-hidden="true">
+                  <use href="./assets/images/social-icons.svg#icon-x-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"
+                aria-label="Follow us on Instagram (opens in a new tab)" class="social__link">
+                <svg class="social__icon" aria-hidden="true">
+                  <use href="./assets/images/social-icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <p class="footer__copy">&copy; Copyright Ping. All rights reserved.</p>
+      </div>
+      <div class="footer__meta">
+        <small class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io/challenges" target="_blank" rel="noopener noreferrer"
+            class="attribution__link">Frontend Mentor</a> – Coded by <a
+            href="https://www.frontendmentor.io/profile/vimp" target="_blank" rel="noopener noreferrer"
+            class="attribution__link">VIMP</a>
+        </small>
+      </div>
+    </div>
+  </footer>
 
-      <footer class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </footer>
 </body>
+
 </html>
