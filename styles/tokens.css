@@ -1,0 +1,41 @@
+@layer tokens {
+  :root {
+    --clr-white: #FFFFFF;
+    --clr-black: #000000;
+    --clr-blue-950: #15202A;
+    --clr-blue-500: #4C7BF3;
+    --clr-blue-500: #376CF1;
+    --clr-blue-200: #C2D3FF;
+    --clr-gray-400: #969696;
+    --clr-gray-400: #757575;
+    --clr-gray-100: #EBEBEB;
+    --clr-gray-50: #FBFCFF;
+    --clr-red-400: #FF5466;
+    --clr-green-500: #2ECC71;
+
+    --space-0: 0;
+    --space-025: 0.125rem;
+    --space-050: 0.25rem;
+    --space-100: 0.5rem;
+    --space-200: 1rem;
+    --space-300: 1.5rem;
+    --space-400: 2rem;
+    --space-500: 2.5rem;
+    --space-600: 3rem;
+
+    --ff-base: 'Libre Franklin', system-ui, sans-serif;
+
+    --fw-light: 300;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+
+    --fs-075: 0.625rem;
+    --fs-100: 0.75rem;
+    --fs-200: 1rem;
+    --fs-300: 1.25rem;
+    --fs-400: 3rem;
+
+    --input-shadow: 0 0 7px 3px hsl(from var(--color-black) h s l/.01);
+    --button-shadow: 0 5px 10px 2px hsl(from var(--color-blue-500) h s l/.23);
+  }
+}
