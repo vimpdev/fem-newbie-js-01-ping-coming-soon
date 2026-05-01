@@ -3,15 +3,10 @@
     --clr-white: #FFFFFF;
     --clr-black: #000000;
     --clr-blue-950: #15202A;
-    --clr-blue-500: #4C7BF3;
     --clr-blue-500: #376CF1;
     --clr-blue-200: #C2D3FF;
-    --clr-gray-400: #969696;
     --clr-gray-400: #757575;
-    --clr-gray-100: #EBEBEB;
-    --clr-gray-50: #FBFCFF;
-    --clr-red-400: #FF5466;
-    --clr-green-500: #2ECC71;
+    --clr-red-400: #EB0017;
 
     --space-0: 0;
     --space-025: 0.125rem;
@@ -35,7 +30,9 @@
     --fs-300: 1.25rem;
     --fs-400: 3rem;
 
-    --input-shadow: 0 0 7px 3px hsl(from var(--color-black) h s l/.01);
-    --button-shadow: 0 5px 10px 2px hsl(from var(--color-blue-500) h s l/.23);
+    --transition-fast: .25s ease-out;
+
+    --shadow-input: 0 0 7px 3px hsl(from var(--clr-black) h s l/.01);
+    --shadow-button: 0 5px 10px 2px hsl(from var(--clr-blue-500) h s l/.23);
   }
 }

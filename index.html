@@ -16,27 +16,27 @@
 
   <header class="header">
     <div class="header__inner container">
-      <img src="./assets/images/logo.svg" alt="Ping">
+      <img src="./assets/images/logo.svg" alt="Ping" class="brand">
     </div>
   </header>
 
   <main>
     <section class="hero">
-      <div class="hero__inner container">
-        <div class="hero__content">
-          <div class="hero__text">
+      <div class="hero__inner container stack">
+        <div class="hero__content stack">
+          <div class="hero__text stack">
             <h1 class="hero__title">We are launching <span class="text-accent">soon!</span></h1>
             <p class="hero__description">Subscribe and get notified</p>
           </div>
-          <form class="form" novalidate>
-            <div class="form__field">
+          <form class="form stack" novalidate>
+            <div class="form__field stack">
               <label for="user-email" class="visually-hidden">Email address</label>
               <input type="email" name="email" id="user-email" class="form__input" placeholder="Your email address..."
-                aria-describedby="error-message" required>
-              <p id="error-message" class="form__message" aria-live="polite" hidden>Please provide a valid email
-                address</p>
+                aria-describedby="error-message" autocomplete="email" required>
+              <p id="error-message" class="form__message" aria-live="polite" hidden>Please provide a valid email address
+              </p>
             </div>
-            <button type="submit" class="form__button" disabled>Notify Me</button>
+            <button type="submit" class="form__button">Notify Me</button>
           </form>
         </div>
 
@@ -47,11 +47,11 @@
     </section>
   </main>
 
-  <footer>
+  <footer class="footer">
     <div class="footer__inner container">
-      <div class="footer__content">
+      <div class="footer__content stack">
         <nav class="social" aria-label="Social media links">
-          <ul class="social__list">
+          <ul class="social__list cluster">
             <li class="social__item">
               <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
                 aria-label="Follow us on Facebook (opens in a new tab)" class="social__link">
@@ -80,14 +80,12 @@
         </nav>
         <p class="footer__copy">&copy; Copyright Ping. All rights reserved.</p>
       </div>
-      <div class="footer__meta">
-        <small class="attribution">
-          Challenge by <a href="https://www.frontendmentor.io/challenges" target="_blank" rel="noopener noreferrer"
-            class="attribution__link">Frontend Mentor</a> – Coded by <a
-            href="https://www.frontendmentor.io/profile/vimp" target="_blank" rel="noopener noreferrer"
-            class="attribution__link">VIMP</a>
-        </small>
-      </div>
+      <small class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io/challenges" target="_blank" rel="noopener noreferrer"
+          class="attribution__link">Frontend Mentor</a> – Coded by <a
+          href="https://www.frontendmentor.io/profile/vimpdev" target="_blank" rel="noopener noreferrer"
+          class="attribution__link">VIMP</a>
+      </small>
     </div>
   </footer>
 
