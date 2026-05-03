@@ -96,6 +96,7 @@
   }
 
   .form__button {
+    flex: 1;
     padding-block: calc(var(--space-100) + var(--space-050));
     font-size: var(--fs-100);
     font-weight: var(--fw-semibold);
@@ -127,6 +128,45 @@
   .social__icon {
     inline-size: 1.5rem;
     block-size: 1.5rem;
+  }
+
+  /* DIALOG */
+  .dialog {
+    --stack-space: var(--space-100);
+    padding: var(--space-300) var(--space-400);
+    text-align: center;
+    background-color: var(--clr-white);
+    border-radius: .5em;
+    border: 0.125rem solid var(--clr-blue-200);
+    color: inherit;
+
+    &::backdrop {
+      background-color: var(--clr-blue-200);
+      opacity: .75;
+    }
+  }
+
+  .dialog__title {
+    margin-block-end: var(--space-100);
+    font-size: var(--fs-350);
+  }
+
+  .dialog__description {
+    margin-block-end: var(--space-300);
+    font-size: var(--fs-200);
+  }
+
+  .dialog__button {
+    inline-size: 100%;
+    padding-block: calc(var(--space-100) + var(--space-050));
+    font-size: var(--fs-100);
+    font-weight: var(--fw-semibold);
+    background-color: var(--clr-blue-500);
+    color: var(--clr-white);
+    border: 0.0625rem solid var(--clr-blue-500);
+    border-radius: 3em;
+    box-shadow: var(--shadow-button);
+    transition: transform var(--transition-fast);
   }
 
   /* FOOTER */
@@ -224,10 +264,6 @@
       --stack-space: var(--space-200);
       flex-direction: row;
       align-items: start;
-
-      >* {
-        flex: 1;
-      }
     }
 
     .form__input,
@@ -236,8 +272,9 @@
       font-size: var(--fs-200);
     }
 
-    .form__input {
-      inline-size: max(100%, 26.3125rem);
+    .form__field {
+      inline-size: 100%;
+      max-inline-size: 26.3125rem;
     }
 
     .form__message {
@@ -258,7 +295,7 @@
     border-color: var(--clr-red-400);
   }
 
-  .form__button:active {
+  :is(.form__button, .dialog__button):active {
     transform: scale(.98);
   }
 
