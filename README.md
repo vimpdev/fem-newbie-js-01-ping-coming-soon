@@ -16,7 +16,7 @@ This is a solution to the [Ping coming soon page challenge on Frontend Mentor](h
 ## 🔗 Links
 
 - 🌎 [Live site](https://vimpdev.github.io/fem-newbie-js-01-ping-coming-soon/)
-- 📌 [Frontend Mentor solution]()
+- 📌 [Frontend Mentor solution](https://www.frontendmentor.io/solutions/ping-coming-soon-page-accessible-validation-constraint-api-uVs5_8tCHx)
 
 ---
 
