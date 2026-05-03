@@ -32,9 +32,9 @@
             <div class="form__field stack">
               <label for="user-email" class="visually-hidden">Email address</label>
               <input type="email" name="email" id="user-email" class="form__input" placeholder="Your email address..."
-                aria-describedby="error-message" autocomplete="email" required>
-              <p id="error-message" class="form__message" aria-live="polite" hidden>Please provide a valid email address
-              </p>
+                aria-describedby="error-message" autocomplete="email" pattern="^[^@\s]+@[^@\s]+\.[a-zA-Z]{2,}$"
+                required>
+              <p id="error-message" class="form__message" aria-live="polite" hidden></p>
             </div>
             <button type="submit" class="form__button">Notify Me</button>
           </form>
@@ -89,6 +89,13 @@
     </div>
   </footer>
 
+  <dialog class="dialog" aria-labelledby="dialog-title">
+    <h2 id="dialog-title" class="dialog__title">Thanks for subscribing!</h2>
+    <p class="dialog__description">We'll notify you when we launch.</p>
+    <form method="dialog">
+      <button class="dialog__button">Got it</button>
+    </form>
+  </dialog>
 </body>
 
 </html>
